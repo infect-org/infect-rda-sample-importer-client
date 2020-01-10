@@ -1,6 +1,6 @@
 {
   "name": "infect-rda-sample-importer-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "client for importing data into rda",
   "main": "index.js",
   "directories": {},
