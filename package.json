@@ -1,8 +1,8 @@
 {
-  "name": "infect-rda-sample-importer-client",
+  "name": "@infect/infect-rda-sample-importer-client",
   "version": "1.0.1",
   "description": "client for importing data into rda",
-  "main": "index.js",
+  "main": "src/InfectRDAImportClient.js",
   "directories": {},
   "scripts": {
     "test": "node --no-warnings --experimental-modules ./node_modules/.bin/section ./test/*.js --dev.testing --log-level=error+ --log-module=*"
