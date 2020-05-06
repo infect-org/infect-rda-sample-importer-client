@@ -49,14 +49,13 @@ export default class InfectRDAImportClient {
     async storeSamples(rows) {
         const importHost = await this.registryClient.resolve('infect-rda-sample-import');
         const dataResponse = await this.httpClient.post(`${importHost}/infect-rda-sample-import.data`).expect(201).query({
-            'return-invalid-data': true,
+            'return-data': true,
         }).send({
             id: this.importId,
             records: rows,
         });
 
-        const invalidSamples = await dataResponse.getData();
-        return invalidSamples;
+        return dataResponse.getData();
     }
 
 
